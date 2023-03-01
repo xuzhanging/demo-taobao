@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .taobao{
+            margin: 0 auto;
+            width: 40%;
+            /* background-color: skyblue; */
+        }
+        .taobao h1{
+            padding-top: 25px;
+            /* margin-bottom: 50px; */
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            line-height: 50px;
+            color: orangered;
+        }
+        .taobao .nav{
+            width: 100%;
+            /* background-color: pink; */
+        }
+        .taobao .nav ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            height: 30px;
+            /* background-color: orange; */
+        }
+        .taobao .nav ul li{
+            width: 10%;
+            height: 100%;
+            /* background-color: green; */
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .taobao .nav ul .goods{
+            background-color: orangered;
+        }
+        .taobao .nav ul .shop{
+            color: black;
+        }
+        .taobao .nav #form1{
+            display: flex;
+            width: 100%;
+            height: 40px;
+        }
+        .taobao .nav #form1 .ipt{
+            flex: 8;
+            padding-left: 5px;
+            height: 40px;
+            border: 2px solid orangered;
+        }
+        .taobao .nav #form1 .btn{
+            flex: 2;
+            height: 40px;
+            background-color: orangered;
+            border: orangered;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        .taobao .result{
+            display: none;
+            width: 100%;
+            /* background-color: pink; */
+            border: 1px solid #ccc;
+        }
+        .taobao .result ol{
+            list-style: none;
+        }
+        .taobao .result ol li{
+            padding-left: 5px;
+            line-height: 30px;
+        }
+        .taobao .result ol li:hover{
+            background-color: grey;
+            cursor: pointer;
+        }
+    </style>
+    <script src="./jquery.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="taobao">
+        <h1>淘宝网</h1>
+        <div class="nav">
+            <ul>
+                <li class="goods">宝贝</li>
+                <li class="shop">店铺</li>
+            </ul>
+            <form id="form1">
+                <input type="text" class="ipt" id="ipt1" placeholder="请输入要搜索的内容">
+                <button class="btn">搜索</button>
+            </form>
+        </div>
+        <div class="result">
+            <ol id="ol1">
+                <!-- <li>结果1</li>
+                <li>结果2</li>
+                <li>结果3</li>
+                <li>结果4</li>
+                <li>结果5</li> -->
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
